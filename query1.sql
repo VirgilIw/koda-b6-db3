@@ -1,22 +1,21 @@
 -- nomor 1
-select "id", "name", "year" 
+select count("year") 
 from movies 
 where "year" > 2000 
 limit 10;
 
 -- nomor 2
-select "first_name", "last_name" 
+select count("first_name")
 from actors 
 where "first_name" 
 ilike '%s' and "last_name" 
-ilike '%s' limit 10
+ilike '%s'
 
 -- nomor 3
-SELECT "id", "name", "rankscore"
-FROM movies
-WHERE "rankscore" BETWEEN 5 AND 7
-AND "year" = 2004
-ORDER BY "rankscore" limit 10;
+select count("rankscore")
+from movies
+where "rankscore" between 5 and 7
+and "year" between 2004 and 2006
 
 -- nomor 4
 select count("name") 
