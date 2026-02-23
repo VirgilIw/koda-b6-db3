@@ -8,7 +8,7 @@ limit 10;
 select count("first_name")
 from actors 
 where "first_name" 
-ilike '%s' and "last_name" 
+-- ilike '%s' and "last_name" 
 ilike '%s'
 
 -- nomor 3
