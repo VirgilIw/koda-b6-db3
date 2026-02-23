@@ -9,13 +9,13 @@ select count("first_name")
 from actors 
 where "first_name" 
 -- ilike '%s' and "last_name" 
-ilike '%s'
+ilike '%s';
 
 -- nomor 3
 select count("rankscore")
 from movies
 where "rankscore" between 5 and 7
-and "year" between 2004 and 2006
+and "year" between 2004 and 2006;
 
 -- nomor 4
 select count("name") 
